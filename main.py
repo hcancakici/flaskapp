@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hellogg():
+def main():
 	hostname = socket.gethostname()
 	host_ip = socket.gethostbyname(hostname)
 	msg = 'Hellog\n\n' + 'Hostname: ' + hostname + '\nHost IP: ' + host_ip
