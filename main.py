@@ -8,7 +8,7 @@ app = Flask(__name__)
 def main():
 	hostname = socket.gethostname()
 	host_ip = socket.gethostbyname(hostname)
-	msg = 'Hellog\n\n' + 'Hostname: ' + hostname + '\nHost IP: ' + host_ip
+	msg = 'Welcome!' + 'Hostname: ' + hostname + '\nHost IP: ' + host_ip
 	return msg
 
 if __name__ == '__main__':
